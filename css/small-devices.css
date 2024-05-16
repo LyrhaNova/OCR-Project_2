@@ -1,0 +1,281 @@
+/* Small devices (phones, less than 768px) */
+@media (max-width: 768px) {
+  /*********************************************************************************/
+  /*                                                                       GENERAL */
+  /*********************************************************************************/
+
+  body {
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 19px;
+    line-height: 1.2;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  h3, h4 {
+    font-size: 13px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  /*********************************************************************************/
+  /*                                                                        HEADER */
+  /*********************************************************************************/
+
+  header {
+    width: 100%;
+    height: 110px;
+    justify-content: center;
+  }
+
+  .appBar {
+    flex-direction: column;
+    min-width: 320px;
+  }
+
+  .header_logo {
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .appBar ul {
+    width: 100%;
+  }
+
+  .appBar ul li {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .appBar a {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .appBar_link:hover::before {
+    top: 33px;
+    width: 100%;
+  }
+
+  /*********************************************************************************/
+  /*                                                                   HERO-HEADER */
+  /*********************************************************************************/
+
+  .hero-header {
+    margin: 30px 15px 0 15px;
+  }
+
+  /******************************************************************** FORM SMALL */
+
+  #form_big {
+    display: none;
+  }
+
+  #form_small {
+    display: flex;
+    width: 290px;
+  }
+
+  label {
+    height: 46px;
+    min-width: 50px;
+  }
+
+  input[type="text"] {
+    font-size: 15px;
+  }
+
+  #input_small {
+    min-width: 200px;
+    height: 45px;
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  .submit_small {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 44px;
+    height: 46px;
+    border-radius: 15px;
+    border: none;
+    background-color: var(--main-color);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.23);
+    left: -23px;
+  }
+
+  .submit_small i {
+    color: white;
+  }
+
+  /*********************************************************************** FILTERS */
+
+  .filters {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .filters_title {
+    height: 35px;
+  }
+
+  .filters_buttons {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .buttons {
+    height: 35px;
+    width: 102px;
+    margin-top: 18px;
+  }
+
+  /*********************************************************************************/
+  /*                                                      ACCOMMODATIONS & POPULAR */
+  /*********************************************************************************/
+
+  .accommodations-and-popular {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  /**************************************************************** ACCOMMODATIONS */
+
+  #accommodations {
+    width: 100%;
+    background-color: white;
+    border-radius: 0;
+  }
+
+  .accommodations_title {
+    width: 84%;
+    height: 50px;
+    margin-top: 10px;
+  }
+
+  .accommodations_cards-preview {
+    width: 88%;
+    gap: 15px;
+  }
+
+  .accommodations_cards-preview a {
+    width: 100%;
+  }
+
+  .accommodations_card img {
+    height: 95px;
+  }
+
+  .acco_card-content {
+    height: 60px;
+  }
+
+  .acco_card-content i {
+    font-size: 9px;
+  }
+
+  .show-more {
+    height: 30px;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .show-more h2 {
+    font-size: 15px;
+  }
+
+  /************************************************************************ POPULAR */
+
+  #popular {
+    width: 100%;
+    height: 420px;
+    border-radius: 0;
+    order: -1;
+  }
+
+  .popular_title {
+    height: 50px;
+    margin-top: 10px;
+  }
+
+  .popular_title i {
+    font-size: 14px;
+  }
+
+  .popular_cards-preview {
+    width: 88%;
+    margin-bottom: 20px;
+  }
+
+  .popular_cards-preview a {
+    width: 100%;
+  }
+
+  .popular_card {
+    height: 100px;
+  }
+
+  .pop_card-content i {
+    font-size: 9px;
+  }
+
+  /*********************************************************************************/
+  /*                                                                    ACTIVITIES */
+  /*********************************************************************************/
+
+  #activities {
+    margin-top: 25px;
+  }
+
+  .activities_title {
+    width: 84%;
+    height: 60px;
+  }
+
+  .activities_cards-preview {
+    flex-direction: column;
+    width: 88%;
+    height: 630px;
+  }
+
+  .activities_cards-preview a {
+    width: 100%;
+  }
+
+  .activities_card img {
+    height: 100px;
+  }
+
+  .act_card-content {
+    height: 40px;
+  }
+
+  /*********************************************************************************/
+  /*                                                                        FOOTER */
+  /*********************************************************************************/
+
+  .footer-list {
+    flex-direction: column;
+  }
+
+  .list {
+    width: 80%;
+    margin-left: 20px;
+  }
+
+  .list li {
+    line-height: 27px;
+  }
+}
