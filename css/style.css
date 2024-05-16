@@ -1,0 +1,489 @@
+/*********************************************************************************/
+/*                                                                       GENERAL */
+/*********************************************************************************/
+
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+:root {
+    --main-color: #0065FC;
+    --main-bg-color: #F2F2F2;
+    --filter-bg-color: #DEEBFF;
+    --main-bg-color-darker: #D9D9D9;
+}
+
+.fa-solid {
+    color: var(--main-color);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 40px 0 40px;
+}
+
+.main-container {
+    max-width: 1440px;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+p, h1 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    line-height: 1.5;
+}
+
+h1, h2 {
+    font-size: 21px;
+}
+
+h3, h4 {
+    font-size: 17px;
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+figure {
+    margin: 0;
+}
+
+.card_stars-icon {
+    word-spacing: -4px;
+}
+
+.stars-icon_blank i {
+    color: var(--main-bg-color);
+}
+
+/******************************************************************** CARD HOVER */
+
+.accommodations_card:hover, .popular_card:hover, .activities_card:hover {
+    opacity: 0.8;
+    color: var(--main-color);
+    box-shadow: 0px 4px 15px -2px var(--filter-bg-color);
+    transition: 0.3s;
+}
+
+/*********************************************************************************/
+/*                                                                        HEADER */
+/*********************************************************************************/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+}
+
+.appBar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header_logo {
+    display: flex;
+    align-items: center;
+}
+
+.header_logo img {
+    width: 55px;
+    height: 17px;
+}
+
+.appBar ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 250px;
+}
+
+.appBar_link {
+    text-decoration: none;
+    position: relative;
+    color: black;
+}
+
+.appBar_link:hover::before {
+    content: "";
+    position: absolute;
+    top: -16px;
+    width: 100%;
+    height: 2px;
+    background-color: var(--main-color);
+}
+
+.appBar_link:hover {
+    color: var(--main-color);
+}
+
+/*********************************************************************************/
+/*                                                                   HERO-HEADER */
+/*********************************************************************************/
+
+.hero-header {
+    margin-top: 20px;
+}
+
+form {
+    display: flex;
+    margin-top: 30px;
+}
+
+#form_big {
+    display: flex;
+}
+
+#form_small {
+    display: none;
+    /* Note : En display: none; pour afficher le bon formulaire selon la taille de l'appareil */
+}
+
+label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-bg-color);
+    height: 53px;
+    width: 50px;
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+}
+
+.form_dot-icon i {
+    color: black;
+    font-size: 18px;
+}
+
+input[type=text] {
+    height: 51px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+    border: 1px solid var(--main-bg-color);
+    outline: none;
+    padding: 0;
+}  
+
+::placeholder {
+    color: black;
+}
+
+input[type=submit] {
+    background-color: var(--main-color);
+    height: 53px;
+    width: 130px;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+/*********************************************************************** FILTERS */
+
+.filters {
+    display: flex;
+    width: 730px;
+    margin-top: 30px;
+}
+
+.filters_title {
+    display: flex;
+    width: 70px;
+}
+
+.filters_title h2 {
+    font-size: 16px;
+}
+
+.filters_buttons {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--main-bg-color-darker);
+    border-radius: 30px;
+    font-weight: 600;
+    padding: 0 17px 0 17px;
+}
+
+.buttons i {
+    font-size: 20px;
+}
+
+.buttons p {
+    padding-left: 12px;
+}
+
+.buttons:hover {
+    background-color: var(--filter-bg-color);
+    transition: 0.3s;
+}
+
+/********************************************************************* INFO-TEXT */
+
+.info-text {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.info-text i {
+    border: 1px solid var(--main-bg-color-darker);
+    border-radius: 100%;
+    padding: 5px 10px 5px 10px;
+    margin-right: 13px;
+    font-size: 12px;
+}
+
+/*********************************************************************************/
+/*                                                      ACCOMMODATIONS & POPULAR */
+/*********************************************************************************/
+
+.accommodations-and-popular {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+/**************************************************************** ACCOMMODATIONS */
+
+#accommodations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 67%;
+    background-color: var(--main-bg-color);
+    border-radius: 17px;
+}
+
+.accommodations_title {
+    display: flex;
+    align-items: center;
+    width: 92%;
+    height: 70px;
+}
+
+.accommodations_title h2 {
+    margin: 0;
+}
+
+.accommodations_cards-preview {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    /* Note : Le gap n'était pas obligatoire mais sert d'exemple quant à son utilisation */
+}
+
+.accommodations_cards-preview a {
+    width: 28.5%;
+    height: fit-content;
+}
+
+.accommodations_card {
+    background-color: white;
+    border-radius: 17px;
+    border: solid 4px white;
+    box-shadow: 0px 4px 15px -2px rgba(70,71,88,0.15);
+}
+
+.accommodations_card img {
+    width: 100%;
+    height: 115px;
+    object-fit: cover;
+    border-radius: 17px 17px 0 0;
+}
+
+.acco_card-content {
+    display: flex;
+    justify-content: space-around;
+    height: 85px;
+    flex-direction: column;
+    padding-left: 12px;
+}
+
+.acco_card-content i {
+    font-size: 14px;
+}
+
+.show-more {
+    display: flex;
+    width: 92%;
+    height: 50px;
+}
+
+.show-more h2 {
+    font-size: 18px;
+    margin: 0;
+}
+
+/* ********************************************************************** POPULAR */
+
+#popular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    background-color: var(--main-bg-color);
+    border-radius: 17px;
+}
+
+.popular_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 84%;
+    height: 70px;
+}
+
+.popular_title h2 {
+    margin: 0;
+}
+
+.popular_title i {
+    font-size: 18px;
+}
+
+.popular_cards-preview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 83%;
+}
+
+.popular_cards-preview a {
+    width: 84%;
+    height: fit-content;
+}
+
+.popular_card {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 17px;
+    border: solid 4px white;
+    box-shadow: 0px 4px 15px -2px rgba(70,71,88,0.15);
+    height: 137px;
+}
+
+.popular_card img {
+    width: 32%;
+    object-fit: cover;
+    border-radius: 17px 0 0 17px;
+    height: 100%;
+}
+
+.pop_card-content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 90%;
+    padding-left: 12px;
+}
+
+.pop_card-content i {
+    font-size: 12px;
+}
+
+/*********************************************************************************/
+/*                                                                    ACTIVITIES */
+/*********************************************************************************/
+
+#activities {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+ .activities_title {
+    display: flex;
+    align-items: center;
+    width: 95%;
+    height: 90px;
+}
+
+.activities_cards-preview {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+}
+
+.activities_cards-preview a {
+    width: 23%;
+    height: fit-content;
+}
+
+
+.activities_card {
+    background-color: white;
+    border-radius: 17px;
+    box-shadow: 0px 4px 15px -2px rgba(70,71,88,0.15);
+}
+
+.activities_card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.act_card-content {
+    display: flex;
+    align-items: center;
+    height: 55px;
+    padding-left: 20px;
+}
+
+/*********************************************************************************/
+/*                                                                        FOOTER */
+/*********************************************************************************/
+
+.footer-list {
+    display: flex;
+    justify-content: center;
+    background-color: var(--main-bg-color);
+    margin-top: 65px;
+}
+
+.list {
+    width: 32.5%;
+}
+
+.list li {
+    line-height: 35px;
+}
+
+.list a {
+    display: inline-block;
+}
+
+.list a:hover {
+    text-decoration: underline;
+}
